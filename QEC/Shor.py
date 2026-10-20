@@ -231,9 +231,9 @@ def bloch_vector(counts_by_basis):
 if __name__ == "__main__":
     # --- parameters
     theta, phi = np.pi / 5, np.pi / 10      # generic point of the Bloch sphere (not a stabilizer state)
-    px = 0.01
-    py = 0
-    pz = 0                                 # Pauli error probabilities per physical qubit
+    px = 0.005
+    py = 0.005
+    pz = 0.005                                 # Pauli error probabilities per physical qubit
     shots = 100_000                        # per measurement: infidelities are ~1e-2 or less
 
     state = create_state(theta, phi)
